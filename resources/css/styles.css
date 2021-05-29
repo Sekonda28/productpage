@@ -1,0 +1,42 @@
+body {
+    color: #023;
+}
+
+#title {
+    background-color:#a5e1ad;
+}
+nav {
+    position: sticky;
+    top: 0;
+    color: #023;
+}
+.navbar-brand {
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #023;
+}
+.navbar-brand.custom {
+    color: #023;
+}
+.navbar-item {
+    padding-left: 30px;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.container-fluid {
+    padding: 0% 10% 3%;
+}
+.row {
+    padding-top: 50px;
+}
+img{
+    max-width: 100%;
+}
+button {
+    margin: 20px 5px 0px 0px ;
+}
