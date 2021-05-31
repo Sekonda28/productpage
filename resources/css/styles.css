@@ -40,21 +40,18 @@ h4 {
     background-color:#a5e1ad;
 }
 nav {
-    position: sticky;
     top: 0;
-    color: #023;
 }
-.navbar-brand {
+.navbar-brand{
     font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     color: #023;
 }
-.navbar-brand.custom {
-    color: #023;
-}
 .navbar-item {
     padding-left: 30px;
+    font-size: 1.5rem;
+    color: #023;
 }
 
 .title-img{
@@ -79,4 +76,13 @@ nav {
     .product-img {
         max-width: 60%;
     }
+}
+
+/* Service section */
+.service {
+    background-color:#a5e1ad;
+    text-align: center;
+}
+.service-box {
+    padding: 10px;
 }
