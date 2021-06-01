@@ -86,3 +86,10 @@ nav {
 .service-box {
     padding: 10px;
 }
+.fa-box, .service-heading {
+    padding-bottom: 8%;
+}
+.service-heading, .service-desc {
+    padding-left: 5%;
+    padding-right: 5%;
+}
