@@ -32,9 +32,9 @@
     <!-- Title Section -->
     <section id="title">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href=""
-            ><img src="./resources/images/RLlogo.png" alt="Shop logo"
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#title"
+            ><img src="./resources/images/RLlogo2.png" alt="Shop logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -50,22 +50,40 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ms-auto">
               <li class="navbar-item">
-                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="#products">Products</a>
               </li>
               <li class="navbar-item">
-                <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link" href="#shipping">Shipping</a>
               </li>
               <li class="navbar-item">
-                <a class="nav-link" href="">Download</a>
+                <a class="nav-link" href="#feedback">Feedback</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="#tips">RL Tips!</a>
               </li>
             </ul>
-          </div>
+            </div>
         </nav>
 
-        <div class="row">
+        <div class="row splash">
           <div class="col-lg-6">
             <h1>Get the best Rocket League merch!</h1>
-            <button type="button" class="btn btn-dark btn-lg">Sign-up!</button>
+            <form
+              action="https://www.freecodecamp.com/email-submit"
+              method="POST"
+            >
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email-input"
+                  placeholder="Enter your e-mail address"
+                />
+                <button type="submit" class="btn btn-dark btn-lg">
+                  Sign-up!
+                </button>
+              </div>
+            </form>
           </div>
           <div class="col-lg-6">
             <img
@@ -79,7 +97,7 @@
     </section>
 
     <!-- Featured Products -->
-    <section class="products">
+    <section id="products" class="products">
       <div class="container-fluid">
         <h2>Featured Products</h2>
         <div class="row">
@@ -139,27 +157,29 @@
       </div>
     </section>
     <!-- Service guarantee -->
-    <section class="service">
+    <section id = "shipping" class="service">
       <div class="container-fluid">
         <h2>Our guarantee</h2>
         <div class="row">
           <div class="service-box col-lg-4">
             <i class="fa-box fas fa-star fa-3x"></i>
-            <h3 class = "service-heading">Premium Materials</h3>
-            <p class = "service-desc">Our products are durable and made to last.</p>
+            <h3 class="service-heading">Premium Materials</h3>
+            <p class="service-desc">
+              Our products are durable and made to last.
+            </p>
           </div>
           <div class="service-box col-lg-4">
-            <i class=" fa-box fas fa-check-circle fa-3x"></i>
-            <h3 class = "service-heading">Authentic</h3>
-            <p class = "service-desc">
+            <i class="fa-box fas fa-check-circle fa-3x"></i>
+            <h3 class="service-heading">Authentic</h3>
+            <p class="service-desc">
               We stock only officially licensed products so you are guaranteed
               the best quality.
             </p>
           </div>
           <div class="service-box col-lg-4">
             <i class="fa-box fas fa-quidditch fa-3x"></i>
-            <h3 class = "service-heading">Fast Shipping</h3>
-            <p class = "service-desc">
+            <h3 class="service-heading">Fast Shipping</h3>
+            <p class="service-desc">
               We dispatch all our merch within 24 hours with no additional
               charges!
             </p>
@@ -169,35 +189,71 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section id = "feedback" class="testimonials">
       <div id="testimonial" class="carousel slide" data-bs-ride="false">
-        <div class = "container-fluid">
+        <div class="container-fluid">
           <h2>What our customers say</h2>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <h2>
-              Ashley provides the best merch ever!
-            </h2>
-            <img class = "testimonial-img" src="images/dog-img.jpg" alt="dog-profile" />
-            <em>Pebbles, New York</em>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2>Ashley provides the best merch ever!</h2>
+              <img
+                class="testimonial-img"
+                src="images/dog-img.jpg"
+                alt="dog-profile"
+              />
+              <em>Pebbles, New York</em>
+            </div>
+            <div class="carousel-item">
+              <h2 class="testimonial-text">
+                My dog used to be so lonely, but with TinDog's help, they've
+                found the love of their life. I think.
+              </h2>
+              <img
+                class="testimonial-image"
+                src="images/lady-img.jpg"
+                alt="lady-profile"
+              />
+              <em>Beverly, Illinois</em>
+            </div>
           </div>
-          <div class="carousel-item">
-            <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-            <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-            <em>Beverly, Illinois</em>
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonial"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonial"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonial" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonial" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-     </div>
     </section>
+
+    <!-- Rocket League tutorial  -->
+    
+    <section id="tips" class = "beginner-guide">
+      <div class="container-fluid">
+        <h2>New to Rocket League?</h2>
+        <p>Check out this guide with 20 tips to improve your game!</p>
+        <div class="embed-responsive">
+          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/wPQn0qQugrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <p>© Copyright 2021 AshTDM204</p>
+    </footer>
     <!-- bootstrap script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

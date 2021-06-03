@@ -28,6 +28,12 @@ p {
 h4 {
     font-weight: 1.2rem;
 }
+
+a {
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
 .container-fluid {
     padding: 0 10% 3%;
 }
@@ -37,10 +43,12 @@ h4 {
 
 /* title section */
 #title {
-    background-color:#a5e1ad;
+    background-color:#a2b9bc;
 }
 nav {
     top: 0;
+    background-color:#6b5b95;
+    padding: 1% 10% 0%;
 }
 .navbar-brand{
     font-size: 2rem;
@@ -50,8 +58,11 @@ nav {
 }
 .navbar-item {
     padding-left: 30px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #023;
+}
+.splash {
+    padding-top: 170px;
 }
 
 .title-img{
@@ -80,7 +91,7 @@ nav {
 
 /* Service section */
 .service {
-    background-color:#a5e1ad;
+    background-color:#b2ad7f;
     text-align: center;
 }
 .service-box {
@@ -92,4 +103,18 @@ nav {
 .service-heading, .service-desc {
     padding-left: 5%;
     padding-right: 5%;
+}
+
+/* Testimonials section */
+
+/* Beginners section */
+.beginner-guide {
+    background-color:#878f99;
+    text-align: center;
+}
+
+footer {
+    padding: 1% 10% 5px;
+    text-align: center;
+    background-color: #6b5b95;
 }
